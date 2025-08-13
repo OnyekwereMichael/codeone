@@ -5,7 +5,7 @@ export default function CTASection() {
     <section className="w-full py-20 bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-white text-center max-sm:mt-6">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-medium mb-4">
-         Let's Build Something 
+         Let&apos;s Build Something
         </h2>
         <p className="text-[14px] md:text-xl text-white/90 mb-10">
           No tech skills? No startup experience? No problem.<br />

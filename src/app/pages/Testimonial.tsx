@@ -77,8 +77,8 @@ export default function Testimonials() {
           </div>
 
           <p className="text-gray-600 text-center md:text-left text-lg md:text-2xl mt-4 md:mt-0">
-            Our clients love us for our commitment to quality, innovation,{" "}
-            <br className="max-sm:hidden" /> and exceptional service. Here's what they have to say.
+            Our clients love us for our commitment to quality, innovation,
+            <br className="max-sm:hidden" /> and exceptional service. Here&apos;s what they have to say..
           </p>
         </div>
 
