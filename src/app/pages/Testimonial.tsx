@@ -10,6 +10,7 @@ import { AiFillStar } from "react-icons/ai";
 
 // Swiper Imports
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperClass } from "swiper";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -60,7 +61,8 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const swiperRef = useRef(null);
+const swiperRef = useRef<SwiperClass | null>(null);
+
 
   return (
     <section id="testimonials" className="px-8 max-sm:px-4 py-5 relative">

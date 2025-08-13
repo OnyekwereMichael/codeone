@@ -90,7 +90,6 @@ export default function Header() {
             ))}
             <li>
              <button
-  asChild
   className="bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-200"
 >
   <a href="#cta" onClick={() => setOpen(false)}>
