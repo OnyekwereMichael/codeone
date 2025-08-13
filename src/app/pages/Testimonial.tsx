@@ -126,7 +126,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
                   >
                     <span className="text-sm text-gray-500 ml-2">5.0</span>
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <AiFillStar key={i} className="text-yellow-500 text-lg" />
+                      <AiFillStar key={i} className="text-yellow-500 text-lg max-sm:text-[15px]" />
                     ))}
                   </div>
                 </section>
