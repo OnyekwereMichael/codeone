@@ -3,14 +3,15 @@ import Image from "next/image";
 import { FaPlus } from "react-icons/fa";
 import { FiArrowDown } from "react-icons/fi";
 import Logo from '../../../public/logo.png'
+import { IoPlay } from "react-icons/io5";
 
 export default function Hero() {
   return (
     <section id="home" className="">
       {/* Background subtle gradient */}
-      <div className=" bg-gradient-to-br from-blue-50 via-white to-blue-100" aria-hidden />
+      <div className=" " />
 
-    <div className="max-w-8xl mx-auto grid gap-8 md:grid-cols-2 items-center pt-8 md:pt-8 px-8 max-sm:px-4">
+    <div className="container mx-auto grid gap-8 md:grid-cols-2 items-center pt-8 md:pt-8 px-8 max-sm:px-4">
 
         
         {/* Text Section */}
@@ -41,17 +42,28 @@ export default function Hero() {
 
         {/* Image Section */}
         <div >
-          <Image
+          {/* <Image
+            src={heroImage}
+            alt="Team collaborating in modern office"
+            className="w-full object-cover rounded-2xl top-left-bottom-right"
+            loading="eager"
+          /> */}
+
+<figure >
+  <Image
             src={heroImage}
             alt="Team collaborating in modern office"
             className="w-full object-cover rounded-2xl "
             loading="eager"
           />
+  <figcaption className="bg-blue-500">Watch Tutorial  <span><IoPlay size={14} className="text-white"/></span></figcaption>
+</figure>
+          
         </div>
 
       </div>
 
-      <section className="px-8 grid gap-8 md:grid-cols-2 items-center max-sm:mt-5 max-sm:px-4">
+      <section className="px-8 mx-auto container grid gap-8 md:grid-cols-2 items-center  max-sm:px-4 max-sm:mt-12 max-sm:gap-1">
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl ">
   {["UI UX Design", "Web Development", "SEO", "App Development", "Digital Marketing", "Brand & Strategy"].map(
     (item, index) => (
@@ -72,7 +84,7 @@ export default function Hero() {
           <p className="text-xl font-semibold ">20</p>
       </div>
       <p className="font-semibold text-[15px] text-white my-2">Years of Experience</p>
-       <p className="text-white">Netsprin boasts a team of seasoned <br className="hidden sm:block"/> professionals with extensive experience</p>
+       <p className="text-white">Netsprin boasts a team of seasoned <br className="hidden sm:block"/> </p>
     </div>
     {/* second block  */}
   <div className="bg-black rounded-4xl p-4">
@@ -82,7 +94,7 @@ export default function Hero() {
       </div>
       <p className="font-semibold my-1 text-[15px] text-white">Years of Experience</p>
        <p className="text-white">Netsprin boasts a team of seasoned <br className="hidden sm:block"/> professionals with extensive experience</p> */}
-       <Image src={Logo} alt=""/>
+       <Image src={Logo} alt="" className="w-full"/>
     </div>
 </div>
 </section>

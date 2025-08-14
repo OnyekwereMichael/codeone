@@ -65,17 +65,33 @@ const swiperRef = useRef<SwiperClass | null>(null);
 
 
   return (
-    <section id="testimonials" className="px-8 max-sm:px-4 py-5 relative">
-      <div className="max-w-8xl mx-auto">
+    <section id="testimonials" className="px-8 max-sm:px-4 py-5 relative container mx-auto">
+      <div className="">
         {/* Top Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10">
           <div className="flex items-center gap-1">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-2 md:mb-5">
               Why Our Customers <br className="max-sm:hidden" /> Think We Are Best
             </h1>
-             <button className="ml-3 bg-white border border-blue-400 text-blue-500 px-4 py-1 rounded-full text-sm inline-flex items-center gap-1 hover:bg-blue-50 transition">
-          <span>→</span>
-        </button>
+            <button
+  className="
+    relative ml-3 bg-white border border-blue-400 text-blue-500
+    px-5 py-1.5 rounded-full text-sm font-medium
+    inline-flex items-center gap-2
+    hover:bg-blue-50 transition-colors duration-200 ease-out
+    max-sm:hidden
+
+    before:content-[''] before:absolute before:top-0 before:right-[-7px]
+    before:h-full before:w-full before:border-r before:border-blue-400
+    before:rounded-full
+
+    after:content-[''] after:absolute after:top-0 after:right-[-14px]
+    after:h-full after:w-full after:border-r after:border-blue-400
+    after:rounded-full
+  "
+>
+  <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+</button>
           </div>
 
           <p className="text-gray-600 text-center md:text-left text-lg md:text-2xl mt-4 md:mt-0">

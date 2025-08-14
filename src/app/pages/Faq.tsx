@@ -2,6 +2,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import whyImg from '../../../public/why.jpg'
 import Image from 'next/image'
+import { FaArrowRight } from "react-icons/fa";
 
 const faqs = [
   { q: "What services do you offer?", a: "End-to-end UI/UX design, web development, mobile apps, and technical SEO." },
@@ -15,9 +16,9 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="px-4 md:px-8 py-5 relative flex flex-col md:flex-row items-center gap-10 bg-gradient-to-b from-white via-gray-50 to-gray-100 rounded-2xl shadow-lg">
+    <section id="faq" className="px-4 md:px-8 py-5 relative flex flex-col md:flex-row items-center gap-10  w-full mx-auto container">
       {/* Text & FAQ */}
-      <div className="w-full md:w-[60%]">
+      <div className="w-full ">
         <p className="text-sm font-semibold tracking-wider uppercase text-indigo-500 mb-3">FAQ</p>
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 mb-8">
           Frequently Asked <span className="text-blue-600">Questions</span>
@@ -58,17 +59,21 @@ export default function Faq() {
       </div>
 
       {/* Image */}
-      <div className="w-full md:w-[40%] flex justify-center">
+      <div className="w-full flex justify-center">
         <div className="relative w-full ">
-          <Image 
+        <figure className="alt">
+                  <Image 
             src={whyImg} 
             alt="Why choose us?" 
-            className="rounded-xl shadow-lg object-cover" 
+            className="rounded-xl shadow-lg object-cover w-full" 
             priority
           />
-          <div className="absolute -bottom-5 -left-5 bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-md text-sm font-semibold">
+                    <figcaption className="bg-blue-500">Explore More <span><FaArrowRight size={14} className="text-white"/></span></figcaption>
+                  </figure>
+             
+          {/* <div className="absolute -bottom-5 -left-5 bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-md text-sm font-semibold">
             We’ve got answers!
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -14,8 +14,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-8 max-sm:px-4 max-sm:mt-5">
-      <div className="max-w-8xl">
+    <section id="projects" className="px-8 max-sm:px-4 max-sm:mt-5 container mx-auto">
+      <div className="">
         <div className="">
           <p className="text-3xl font-semibold tracking-wider uppercase text-black mb-2 text-center">Our Latest Projects</p>
           <h2 className="text-lg text-black md:text-xl text-center  tracking-tight mb-10">We provide a comprehensive suite of services to help <br className="max-sm:hidden"/>   businesses  thrive in the digital age.</h2>
@@ -29,16 +29,16 @@ export default function Projects() {
     {/* First Card: Image Top + Text Bottom */}
     {index === 0 && (
       <>
-        <div className="relative">
+        <div className="relative ">
           <div className="bg-blue-100/50 rounded-xl p-6">
             <Image
               src={p.img}
               alt={`${p.title} preview`}
               loading="lazy"
-              className="w-full h-72 object-cover mx-auto rounded-xl"
+              className="w-full h-72 object-cover mx-auto rounded-xl top-right"
             />
           </div>
-          <div className="absolute top-4 right-4 bg-blue-500 rounded-full p-2 shadow-md cursor-pointer">
+          <div className="absolute top-8 right-8 bg-blue-500 rounded-full p-2 shadow-md cursor-pointer">
             <FiArrowDown size={25} className="-rotate-125 text-white" />
           </div>
         </div>
@@ -57,10 +57,10 @@ export default function Projects() {
             src={p.img}
             alt={`${p.title} preview`}
             loading="lazy"
-            className="w-full h-96 object-cover mx-auto rounded-xl"
+            className="w-full h-96 object-cover mx-auto rounded-xl top-right"
           />
         </div>
-        <div className="absolute top-6 right-4 bg-blue-500 rounded-full p-2 shadow-md cursor-pointer">
+        <div className="absolute top-14 right-8 max-sm:top-9 bg-blue-500 rounded-full p-2 shadow-md cursor-pointer">
           <FiArrowDown size={25} className="-rotate-125 text-white" />
         </div>
       </div>
@@ -79,10 +79,10 @@ export default function Projects() {
               src={p.img}
               alt={`${p.title} preview`}
               loading="lazy"
-              className="w-full h-72 object-cover mx-auto rounded-xl"
+              className="w-full h-72 object-cover mx-auto rounded-xl top-right"
             />
           </div>
-          <div className="absolute top-4 right-4 bg-blue-500 rounded-full p-2 shadow-md cursor-pointer">
+          <div className="absolute top-8 right-8 bg-blue-500 rounded-full p-2 shadow-md cursor-pointer">
             <FiArrowDown size={25} className="-rotate-125 text-white" />
           </div>
         </div>

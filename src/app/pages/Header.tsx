@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/70 bg-background/90 border-b">{/* SEO: header/nav */}
-      <nav className="container flex items-center justify-between py-4">
+      <nav className="mx-auto container flex items-center justify-between py-4">
         <a href="#home" className="flex items-center gap-2 group px-8 max-sm:px-4">
   {/* Icon container */}
   <span

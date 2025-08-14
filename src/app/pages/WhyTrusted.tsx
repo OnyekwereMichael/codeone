@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const WhyTrusted = () => {
   return (
-  <section className="relative py-16 px-4 md:px-12 bg-white">
+  <section className="relative py-16 px-4 md:px-8 bg-white container mx-auto">
   {/* Background Pattern */}
   <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-20 pointer-events-none"></div>
 
@@ -14,9 +14,25 @@ const WhyTrusted = () => {
       <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
         We Always Provide <br />
         <span className="bg-blue-100 px-2 rounded">Best Services</span>
-        <button className="ml-3 bg-white border border-blue-400 text-blue-500 px-4 py-1 rounded-full text-sm inline-flex items-center gap-1 hover:bg-blue-50 transition">
-          <span>→</span>
-        </button>
+       <button
+  className="
+    relative ml-3 bg-white border border-blue-400 text-blue-500
+    px-5 py-1.5 rounded-full text-sm font-medium
+    inline-flex items-center gap-2
+    hover:bg-blue-50 transition-colors duration-200 ease-out
+    max-sm:hidden
+
+    before:content-[''] before:absolute before:top-0 before:right-[-7px]
+    before:h-full before:w-full before:border-r before:border-blue-400
+    before:rounded-full
+
+    after:content-[''] after:absolute after:top-0 after:right-[-14px]
+    after:h-full after:w-full after:border-r after:border-blue-400
+    after:rounded-full
+  "
+>
+  <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+</button>
       </h2>
       <p className="mt-4 text-gray-600 max-w-lg">
         We provide a comprehensive suite of services tailored to meet the diverse

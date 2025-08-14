@@ -13,28 +13,45 @@ export default function AboutSection() {
   return (
     <section id="about" className="pt-16 pb-8 ">
       {/* Top Header Section */}
-      <div className="max-w-8xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center ">
+      <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center ">
         <div className="flex items-center gap-1 ">
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight mb-2 md:mb-5 ">
               About Our Creative <br className="max-sm:hidden"/> Agency
           </h1>
-           <button className="ml-3 bg-white border border-blue-400 text-blue-500 px-4 py-1 rounded-full text-sm inline-flex items-center gap-1 hover:bg-blue-50 transition max-sm:hidden">
-          <span>→</span>
-        </button>
+     <button
+  className="
+    relative ml-3 bg-white border border-blue-400 text-blue-500
+    px-5 py-1.5 rounded-full text-sm font-medium
+    inline-flex items-center gap-2
+    hover:bg-blue-50 transition-colors duration-200 ease-out
+    max-sm:hidden
+
+    before:content-[''] before:absolute before:top-0 before:right-[-7px]
+    before:h-full before:w-full before:border-r before:border-blue-400
+    before:rounded-full
+
+    after:content-[''] after:absolute after:top-0 after:right-[-14px]
+    after:h-full after:w-full after:border-r after:border-blue-400
+    after:rounded-full
+  "
+>
+  <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+</button>
+
+
         </div>
 
-        <p className="text-gray-600 text-center md:text-left text-[16px] md:text-[px] max-sm:mt-3">
+        <p className="text-gray-600 text-center md:text-left text-[16px] md:text-2xl max-sm:mt-3">
           We are a development company, crafting high-performance <br />
-          websites, mobile apps, and <br className="max-sm:hidden"/> UI/UX designs that drive business
-          success.
+          websites, mobile apps, UIUX Design Etc.
         </p>
       </div>
 
       {/* Main Content Grid */}
-      <div className="max-w-8xl mx-auto grid md:grid-cols-3 gap-10 items-center bg-white pt-8 md:pt-8 px-8 max-sm:px-4 rounded-2xl">
+      <div className="container mx-auto grid md:grid-cols-3 gap-10 items-center bg-white pt-8 md:pt-8 px-8 max-sm:px-4 rounded-2xl">
         
         {/* Left: Image spanning 2 columns */}
-        <div className="relative w-full h-full md:col-span-2">
+        {/* <div className="relative w-full h-full md:col-span-2">
           <Image
             src={aboutImage}
             alt="Team working in office"
@@ -47,7 +64,20 @@ export default function AboutSection() {
   </span>
 </button>
 
-        </div>
+        </div> */}
+
+ <div className="relative w-full h-full md:col-span-2">
+        <figure className="alt">
+          <Image
+                    src={aboutImage}
+                    alt="Team collaborating in modern office"
+                    className="w-full object-cover rounded-2xl "
+                    loading="eager"
+                  />
+          <figcaption className="bg-blue-500">Explore More <span><FaArrowRight size={14} className="text-white"/></span></figcaption>
+        </figure>
+        </div >
+                  
       
 
         {/* Right: Stats */}
