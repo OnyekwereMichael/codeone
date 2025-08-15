@@ -7,7 +7,7 @@ export default function SideSteps() {
   ];
 
   return (
-    <div className="relative flex items-center mt-5">
+    <div className="relative flex items-center mt-5 max-sm:hidden">
       {/* Curved background */}
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white shadow-inner [clip-path:ellipse(60%_90%_at_0%_50%)]" />
 
