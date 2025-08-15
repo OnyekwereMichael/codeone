@@ -134,7 +134,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-sm font-bold">
             © 2024 Netsprin. All rights reserved.
           </p>
           

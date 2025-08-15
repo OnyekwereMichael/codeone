@@ -331,7 +331,7 @@ figure.alt figcaption {
 .bottom-leftt {
   --s: 20px;  /* cut size */
   --r: 50px;  /* curve radius */
-  --br: 65px; /* premium curve radius */
+  --br: 5px; /* premium curve radius */
 
   --_m:
     linear-gradient(#000 0 0) content-box,
