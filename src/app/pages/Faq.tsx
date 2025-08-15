@@ -16,7 +16,7 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="px-4 md:px-8 py-5 relative flex flex-col md:flex-row items-center gap-10  w-full mx-auto container">
+    <section id="faq" className="px-4 md:px-8 py-5 relative flex flex-col md:flex-row items-center gap-10  w-full mx-auto container mt-6 max-sm:mt-0">
       {/* Text & FAQ */}
       <div className="w-full ">
         <p className="text-sm font-semibold tracking-wider uppercase text-indigo-500 mb-3">FAQ</p>

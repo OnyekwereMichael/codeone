@@ -1,9 +1,12 @@
 import { FiArrowDown } from 'react-icons/fi';
+import SideSteps from './Sidestep';
 
 export default function CTASection() {
   return (
-    <section className="w-full py-20 bg-blue-600 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplrtzGok0nhAfnWCRBQ1Am0r_1PF-A2yJ_8--gaFDUHa50qy02jyTnMfsOsB0V6LRQ8c&usqp=CAU')] bg-repeat bg-blend-overlay bg-opacity-60 mt-8 text-black text-center max-sm:mt-6">
-      <div className="max-w-3xl mx-auto px-4">
+    <section className="">
+     
+      <div className="w-full card py-20 bg-blue-600 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplrtzGok0nhAfnWCRBQ1Am0r_1PF-A2yJ_8--gaFDUHa50qy02jyTnMfsOsB0V6LRQ8c&usqp=CAU')] bg-repeat bg-blend-overlay bg-opacity-60 mt-6 text-black text-center max-sm:mt-6">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold mb-4">
          Let&apos;s Make Something
         </h2>
@@ -22,6 +25,8 @@ export default function CTASection() {
           </button>
         </div>
       </div>
+      </div>
+       <SideSteps />
     </section>
   );
 }

@@ -65,7 +65,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
 
 
   return (
-    <section id="testimonials" className="px-8 max-sm:px-4 py-5 relative container mx-auto">
+    <section id="testimonials" className="px-8 max-sm:px-4 py-5 relative container mx-auto mt-2 max-sm:mt-0">
       <div className="">
         {/* Top Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10">

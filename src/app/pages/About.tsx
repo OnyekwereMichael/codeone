@@ -11,7 +11,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="pt-16 pb-8 ">
+    <section id="about" className="pt-16 pb-8 mt-6 max-sm:mt-0">
       {/* Top Header Section */}
       <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center ">
         <div className="flex items-center gap-1 ">

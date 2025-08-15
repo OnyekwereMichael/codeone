@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const WhyTrusted = () => {
   return (
-  <section className="relative py-16 px-4 md:px-8 bg-white container mx-auto">
+  <section className="relative py-16 px-4 md:px-8 bg-white container mx-auto mt-6 max-sm:mt-0">
   {/* Background Pattern */}
   <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-20 pointer-events-none"></div>
 

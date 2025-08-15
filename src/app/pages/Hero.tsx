@@ -78,7 +78,7 @@ export default function Hero() {
 </div>
 
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-  <div className="bg-blue-400 rounded-4xl p-4 max-sm:p-8">
+  <div className="bg-blue-600 rounded-4xl p-4 max-sm:p-8 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplrtzGok0nhAfnWCRBQ1Am0r_1PF-A2yJ_8--gaFDUHa50qy02jyTnMfsOsB0V6LRQ8c&usqp=CAU')] bg-repeat bg-blend-overlay bg-opacity-60">
       <div className="flex gap-1 text-white items-center mb-2">
         <FaPlus size={22} />
           <p className="text-xl font-semibold ">20</p>

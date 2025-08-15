@@ -4,6 +4,7 @@ import p2 from "../../../public/project-2.jpg";
 import p3 from "../../../public/project-3.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { FiArrowDown } from "react-icons/fi";
+import SideSteps from "./Sidestep";
 
 
 const projects = [
@@ -14,8 +15,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-8 max-sm:px-4 max-sm:mt-5 container mx-auto">
-      <div className="">
+    <section id="projects" className="">
+      <SideSteps />
+      <div className="px-8 max-sm:px-4 max-sm:mt-5 container mx-auto">
         <div className="">
           <p className="text-3xl font-semibold tracking-wider uppercase text-black mb-2 text-center">Our Latest Projects</p>
           <h2 className="text-lg text-black md:text-xl text-center  tracking-tight mb-10">We provide a comprehensive suite of services to help <br className="max-sm:hidden"/>   businesses  thrive in the digital age.</h2>
