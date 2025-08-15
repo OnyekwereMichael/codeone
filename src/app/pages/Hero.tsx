@@ -49,11 +49,19 @@ export default function Hero() {
             loading="eager"
           /> */}
 
+{/* <SideSteps /> */}
+
+{/* <SideSteps /> */}
+       <div className='tagss_hero'>
+       <p>tags</p>
+     </div>
+      <div className="absolute  bg-black/30"></div>
+  
 <figure className="">
   <Image
             src={heroImage}
             alt="Team collaborating in modern office"
-            className="w-full object-cover rounded-2xl "
+            className="w-full object-cover rounded-2xl"
             loading="eager"
           />
   <figcaption className="bg-blue-500">Watch Tutorial  <span><IoPlay size={14} className="text-white"/></span></figcaption>

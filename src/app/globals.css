@@ -347,5 +347,23 @@ figure.alt figcaption {
   color: white
 }
 
+.tagss_hero {
+  width: 10rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center text */
+  position: relative;
+  top: 40px;
+  background-color: white;
+  border-bottom: 0.5rem solid #fff;
+  /* border-left: 0rem solid #fff; */
+  border-top-left-radius: 1rem; /* matches image curve */
+  border-bottom-left-radius: 1rem; /* new: fully rounded top */
+  color: white;
+  z-index: 10;
+  rotate: -180deg; /* new: slight rotation for effect */
+}
+
 }
 
