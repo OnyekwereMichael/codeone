@@ -330,7 +330,7 @@ figure.alt figcaption {
 
 .bottom-leftt {
   --s: 20px;  /* cut size */
-  --r: 50px;  /* curve radius */
+  --r:30px;  /* curve radius */
   --br: 5px; /* premium curve radius */
 
   --_m:

@@ -49,7 +49,7 @@ export default function Hero() {
             loading="eager"
           /> */}
 
-<figure >
+<figure className="">
   <Image
             src={heroImage}
             alt="Team collaborating in modern office"
