@@ -329,49 +329,23 @@ figure.alt figcaption {
 
 
 .bottom-leftt {
-  --s: 20px;  /* cut size */
-  --r:30px;  /* curve radius */
-  --br: 5px; /* premium curve radius */
 
-  --_m:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-
-  -webkit-mask:
-    /* Rounded curved section */
-    radial-gradient(
-      calc(var(--r) + var(--br)) calc(var(--r) + var(--br)) at 0 100%,
-      #0000 99%,
-      #000 calc(100% + 1px)
-    ) no-repeat 0 100%,
-    conic-gradient(
-      from 180deg at calc(var(--s) + 2 * var(--r)) 
-      calc(100% - var(--s) - 2 * var(--r)),
-      #0000 25%, 
-      #000 0
-    ) no-repeat 0 0;
-  -webkit-mask-size: 100% 100%;
-  -webkit-mask-composite: destination-in;
-
-  mask:
-    radial-gradient(
-      calc(var(--r) + var(--br)) calc(var(--r) + var(--br)) at 0 100%,
-      #0000 99%,
-      #000 calc(100% + 1px)
-    ) no-repeat 0 100%,
-    conic-gradient(
-      from 180deg at calc(var(--s) + 2 * var(--r)) 
-      calc(100% - var(--s) - 2 * var(--r)),
-      #0000 25%, 
-      #000 0
-    ) no-repeat 0 0;
-  mask-size: 100% 100%;
-  mask-composite: intersect;
-
-  border-bottom-left-radius: var(--br);
 }
 
-
+.tagsss{
+  width: 12.5rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* right: 0; */
+  top: -40px;
+  background-color: white;
+  border-top: 0.5rem solid #fff;
+  border-left: 0.5rem solid #fff;
+  border-radius: 0 1rem 0 0;
+  color: white
+}
 
 }
 
