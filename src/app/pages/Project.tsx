@@ -15,13 +15,29 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="">
-      <SideSteps />
+    <section id="projects" className="mt-18">
+      <div className="relative flex items-center w-full">
+  <div className="absolute left-0 top-1/8 -translate-y-1/2 ">
+    <SideSteps />
+  </div>
+
+  {/* Centered text */}
+  <div className="flex-1 flex justify-center">
+    <div className="text-center max-w-2xl">
+      <p className="text-3xl font-semibold tracking-wider uppercase text-black mb-2">
+        Our Latest Projects
+      </p>
+      <h2 className="text-lg text-black md:text-xl tracking-tight mb-10">
+        We provide a comprehensive suite of services to help{" "}
+        <br className="max-sm:hidden" /> businesses thrive in the digital age.
+      </h2>
+    </div>
+  </div>
+</div>
+
+      
       <div className="px-8 max-sm:px-4 max-sm:mt-5 container mx-auto">
-        <div className="">
-          <p className="text-3xl font-semibold tracking-wider uppercase text-black mb-2 text-center">Our Latest Projects</p>
-          <h2 className="text-lg text-black md:text-xl text-center  tracking-tight mb-10">We provide a comprehensive suite of services to help <br className="max-sm:hidden"/>   businesses  thrive in the digital age.</h2>
-        </div>
+        
         <div className="grid gap-6 md:grid-cols-3">
 {projects.map((p, index) => (
   <article

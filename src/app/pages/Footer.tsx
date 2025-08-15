@@ -1,4 +1,5 @@
 import { Mail, Twitter, Linkedin, Github } from 'lucide-react';
+import MessageInput from './MessageInput';
 
 
 const Footer = () => {
@@ -65,7 +66,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-4">Our Company</h4>
+            <h4 className="font-semibold mb-4 text-xl">Our Company</h4>
             <ul className="space-y-3">
               {footerLinks.product.map((link, index) => (
                 <li key={index}>
@@ -81,7 +82,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Community</h4>
+            <h4 className="font-semibold mb-4 text-xl">Community</h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link, index) => (
                 <li key={index}>
@@ -97,7 +98,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Our Socials</h4>
+            <h4 className="font-semibold text-xl mb-4">Our Social Media</h4>
             {/* <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
@@ -138,7 +139,7 @@ const Footer = () => {
           </p>
           
           <div className="flex space-x-6 mt-4 sm:mt-0">
-            <a href="#privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            {/* <a href="#privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
               Privacy Policy
             </a>
             <a href="#terms" className="text-muted-foreground hover:text-primary text-sm transition-colors">
@@ -146,7 +147,9 @@ const Footer = () => {
             </a>
             <a href="#cookies" className="text-muted-foreground hover:text-primary text-sm transition-colors">
               Cookie Policy
-            </a>
+            </a> */}
+
+            <MessageInput  />
           </div>
         </div>
       </div>

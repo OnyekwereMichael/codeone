@@ -14,6 +14,7 @@ import type { Swiper as SwiperClass } from "swiper";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import CurvedArrow from "./CurvedArrow";
 
 const testimonials = [
   {
@@ -65,8 +66,8 @@ const swiperRef = useRef<SwiperClass | null>(null);
 
 
   return (
-    <section id="testimonials" className="px-8 max-sm:px-4 py-5 relative container mx-auto mt-2 max-sm:mt-0">
-      <div className="">
+    <section id="testimonials" >
+      <div className="px-8 max-sm:px-4 py-5 relative container mx-auto mt-2 max-sm:mt-0">
         {/* Top Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10">
           <div className="flex items-center gap-1">
@@ -171,6 +172,8 @@ const swiperRef = useRef<SwiperClass | null>(null);
         </div>
 
       </div>
+
+      <CurvedArrow />
     </section>
   );
 }
