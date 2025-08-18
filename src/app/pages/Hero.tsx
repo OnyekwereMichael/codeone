@@ -52,10 +52,10 @@ export default function Hero() {
 {/* <SideSteps /> */}
 
 {/* <SideSteps /> */}
-       <div className='tagss_hero'>
+       {/* <div className='tagss_hero'>
        <p>tags</p>
      </div>
-      <div className="absolute  bg-black/30"></div>
+       */}
   
 <figure className="">
   <Image
